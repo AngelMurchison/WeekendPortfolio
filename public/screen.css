@@ -221,6 +221,11 @@ time {
         border: 2px solid #fafafa;
         border-radius: 1em;
     }
+ 
+.copyright{
+    margin: 0;
+    margin-bottom:1em;
+}
 
 * {
     /*border: 1px solid red;*/
