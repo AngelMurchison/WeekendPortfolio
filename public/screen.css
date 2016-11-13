@@ -6,15 +6,16 @@ html {
 
 body {
     margin: 0;
-    font: 16px / 1 sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .firstscreen {
     background-image: url("space.png");
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     padding-top: 1em;
-    background-size:cover;
-
+    background-size: cover;
 }
 
 .top {
@@ -31,58 +32,78 @@ body {
 }
 
 blockquote {
-    margin-top: -3em;
+    margin-top: -1em;
+    margin-right: 20px;
+    margin-left: 20px;
     background-color: #fafafa;
     border-radius: 0.5em;
     opacity: 0.7;
+    padding-top: 10px;
+    padding-bottom: 0;
+    padding-left: 7.5px;
+    padding-right: 0;
+    height: 70px;
+    width: 320px;
+    position: relative;
 }
+
+    blockquote::after {
+        content: '';
+        background-image: url(images/tri.png);
+        display: block;
+        color: red;
+    }
 
 h1 {
-    margin-top: 0.8em;
-    margin-left: 0.6em;
+    margin: 0;
     opacity: 1;
     margin-bottom: 0;
-    padding-top: 0.2em;
     color: #292a2b;
 }
 
-.introparagraph {
-    padding: 1em;
+.description {
     opacity: 1;
-    margin-top: -0.5em;
     color: #292a2b;
+    margin: 0;
+    padding-left: 3px;
 }
 
 .portfolio {
     display: flex;
     flex-direction: row;
-    padding-top: 0.8em;
-    justify-content: space-around;
+    margin-top: 0.8em;
+    justify-content: center;
+    align-content: center;
     margin: -1em;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 ul {
     list-style: none;
     display: flex;
     flex-direction: row;
+    align-content: center;
+    flex-wrap: wrap;
     justify-content: space-between;
-    background-color: rgba(0, 0, 0, 0.7);
+    padding-left: 0;
+    min-width: 100%;
 }
 
 li {
     display: flex;
     flex-direction: row;
     padding: 1em;
-    padding-left: 3em;
-    padding-right: 3em;
     flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 3em;
+    margin-right: 3em;
 }
 
-img.projects {
+.projects {
     border-radius: 0.5em;
 }
 
-.blog {
+article {
     background-color: #041633;
     display: flex;
     flex-direction: column;
@@ -90,33 +111,60 @@ img.projects {
     align-items: center;
 }
 
-.blogpost {
+header {
+    min-height: 50px;
+    width: 1020px;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+    border: 2px solid #afb5bf;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 3em;
+}
+
+.blogtext {
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    background-color: #fafafa;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 484px;
+    max-width: 1000px;
+    margin-bottom: 3em;
+    padding-left: 20px;
+    position: relative;
+    border: 2px solid #afb5bf;
+    border-top: 0px;
 }
 
-.blogheader {
-    padding-top: 2em;
-    border-top-left-radius: 0.5em;
-    border-top-right-radius: 0.5em;
-
-}
-
-header {
+.blogtitle {
     display: flex;
-    justify-content: center;
-    max-height: 40px;
-}
-.blogtext {
-    background-color: #fafafa;
-    border-bottom-left-radius: 0.5em;
-    border-bottom-right-radius: 0.5em;
-
 }
 
-* { 
+time {
+    padding-top: 1.3em;
+    padding-left: 1em;
+}
+
+.more {
+    background-color: hsl(200, 80%, 75%);
+    padding: 10px;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    bottom: -20px;
+    border: 1px solid hsl(200, 60%, 50%);
+    border-radius: 4px;
+}
+
+    .more:link,
+    .more:visited {
+        color: white;
+        text-decoration: none;
+    }
+/*Why won't these ^ hug the left side?*/
+
+* {
     /*border: 1px solid red;*/
-
 }
