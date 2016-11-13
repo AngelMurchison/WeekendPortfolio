@@ -12,6 +12,8 @@ body {
     background-color: #000f28;
 }
 
+/*Header area including portfolio*/
+
 .firstscreen {
     background-image: url(http://bossfight.co/wp-content/uploads/2015/08/boss-fight-free-high-quality-stock-images-photos-photography-night-sky-roof.jpg);
     background-size: cover;
@@ -125,6 +127,7 @@ h1 {
     height: auto;
 }
 
+/*Blog area starts below.*/
 
 article {
     display: flex;
@@ -192,7 +195,8 @@ time {
         color: white;
         text-decoration: none;
     }
-/*Why won't these ^ hug the left side?*/
+
+/*Social media area and subtext*/
 
 .lastarea {
     display: flex;
