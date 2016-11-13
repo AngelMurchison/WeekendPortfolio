@@ -33,8 +33,6 @@ body {
     border-radius: 0.5em;
 }
 
-
-
 blockquote {
     margin-top: -3em;
     margin-right: 20px;
@@ -47,7 +45,7 @@ blockquote {
     padding-left: 7.5px;
     padding-right: 0;
     height: 70px;
-    width: 320px;
+    min-width: 320px;
     position: relative;
 }
 
@@ -71,9 +69,9 @@ blockquote::after {
 }
 
 @media only screen and (max-width: 744px) {
-    blockquote::after { 
+    blockquote::after {
         background-image: none;
-}
+    }
 }
 
 h1 {
@@ -101,7 +99,7 @@ h1 {
     max-height: 200px;
 }
 
-ul {
+.projectcontainer {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -111,11 +109,10 @@ ul {
     min-width: 100%;
 }
 
-li {
+.portfoliocontent {
     display: flex;
     flex-direction: row;
     padding: 1em;
-    ;
     margin-left: 1em;
     margin-right: 1em;
 }
@@ -205,6 +202,20 @@ time {
 
     .lastarea h2, h6 {
         color: #fafafa;
+    }
+
+    .lastarea ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        min-width: 600px;
+    }
+
+    .lastarea li {
+        background-color: hsl(200, 80%, 75%);
+        border: 2px solid #fafafa;
+        border-radius: 1em;
     }
 
 * {
